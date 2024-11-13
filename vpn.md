@@ -6,6 +6,7 @@
 1. https://habr.com/ru/companies/xakep/articles/699000/  
 1. https://qna.habr.com/q/1373210  
 1. https://markodvin.gitbook.io/dfevlog/iptables/nastraivaem-iptables-dlya-dokera
+2. https://www.redhat.com/en/blog/filtering-tcpdump
 
 
 # Конечный сервер (нл)
