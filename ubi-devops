@@ -1,0 +1,9 @@
+FROM registry.red-soft.ru/ubi8/ubi AS ubi
+
+RUN dnf install -y zip fontconfig diffutils jq docker-ce-cli wget nano net-tools bind-utils
+
+COPY etc/cert/*.pem /usr/share/pki/ca-trust-source/anchors/
+RUN update-ca-trust
+
+RUN rm -f /etc/yum.repos.d/*.repo
+COPY docker/devops/ubi.repo /etc/yum.repos.d/ubi.repo
